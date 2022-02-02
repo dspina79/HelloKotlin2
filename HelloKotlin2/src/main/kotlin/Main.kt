@@ -22,6 +22,15 @@ fun main(args: Array<String>) {
     printJob("Manager")
     printJob("Supervisor")
     printJob("Executive")
+    /*
+    prints
+        No role defined
+        What type of manager?
+        something else
+        Big Boss
+     */
+    println(sayHello("Dave"))
+    println(add(5, 6))
 }
 
 fun printJob(jobRole: String?) {
@@ -32,4 +41,12 @@ fun printJob(jobRole: String?) {
         "Executive" -> println("Big Boss")
         else -> println("something else")
     }
+}
+
+fun add(x: Int, y: Int): Int {
+    return x + y
+}
+
+fun sayHello(name: String): String {
+    return "Hello, $name"
 }
