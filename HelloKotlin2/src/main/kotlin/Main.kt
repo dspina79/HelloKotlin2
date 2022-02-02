@@ -18,12 +18,18 @@ fun main(args: Array<String>) {
         println("Name is null")
     }
 
+    printJob(null)
+    printJob("Manager")
+    printJob("Supervisor")
+    printJob("Executive")
+}
+
+fun printJob(jobRole: String?) {
     // when statements, the equivalent of switch/case
-    var jobRole: String? = null
     when (jobRole) {
         null -> println("No role defined")
         "Manager" -> println("What type of manager?")
         "Executive" -> println("Big Boss")
-        else -> "something else"
+        else -> println("something else")
     }
 }
