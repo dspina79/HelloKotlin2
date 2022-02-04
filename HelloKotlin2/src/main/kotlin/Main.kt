@@ -32,6 +32,18 @@ fun main(args: Array<String>) {
     println(sayHello("Dave"))
     println(add(5, 6))
     println(multiply(5,6))
+
+    arrayExample()
+}
+
+fun arrayExample() {
+    val myArray = arrayOf("Don", "Linda", "Brenda", "Leon")
+    println(myArray.size)
+    println(myArray[2]) // prints Brenda
+
+    for (person in myArray) {
+        println(person)
+    }
 }
 
 fun printJob(jobRole: String?) {
