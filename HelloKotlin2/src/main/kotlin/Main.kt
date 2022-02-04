@@ -31,6 +31,7 @@ fun main(args: Array<String>) {
      */
     println(sayHello("Dave"))
     println(add(5, 6))
+    println(multiply(5,6))
 }
 
 fun printJob(jobRole: String?) {
@@ -46,6 +47,8 @@ fun printJob(jobRole: String?) {
 fun add(x: Int, y: Int): Int {
     return x + y
 }
+
+fun multiply(x: Int, y: Int) = x * y
 
 fun sayHello(name: String): String {
     return "Hello, $name"
