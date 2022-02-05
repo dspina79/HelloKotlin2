@@ -33,7 +33,16 @@ fun main(args: Array<String>) {
     println(add(5, 6))
     println(multiply(5,6))
 
-    arrayExample()
+    //arrayExample()
+    mapExample()
+}
+
+fun mapExample() {
+    var myMap = mapOf("name" to "Dean", "age" to "30")
+
+    myMap.forEach { key, value ->
+        println("The key is $key and the value is $value")
+    }
 }
 
 fun arrayExample() {
@@ -69,6 +78,14 @@ fun arrayExample() {
     myArray.forEachIndexed { index, person ->
         println("This is $person and they are at position $index")
     }
+
+    /*
+    prints
+        This is Don and they are at position 0
+        This is Linda and they are at position 1
+        This is Brenda and they are at position 2
+        This is Leon and they are at position 3
+     */
 }
 
 fun printJob(jobRole: String?) {
