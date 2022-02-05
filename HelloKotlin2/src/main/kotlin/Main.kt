@@ -44,6 +44,31 @@ fun arrayExample() {
     for (person in myArray) {
         println(person)
     }
+    /*
+    prints
+        Don
+        Linda
+        Brenda
+        Leon
+     */
+
+    // alertnative foreach
+    myArray.forEach {person ->
+        println("This is an item $person")
+    }
+    /*
+    prints
+        This is an item Don
+        This is an item Linda
+        This is an item Brenda
+        This is an item Leon
+     */
+
+    // foreach indexed
+
+    myArray.forEachIndexed { index, person ->
+        println("This is $person and they are at position $index")
+    }
 }
 
 fun printJob(jobRole: String?) {
