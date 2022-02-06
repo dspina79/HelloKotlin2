@@ -35,13 +35,30 @@ fun main(args: Array<String>) {
 
     //arrayExample()
     mapExample()
+    mutableMapExample()
 }
 
 fun mapExample() {
-    var myMap = mapOf("name" to "Dean", "age" to "30")
+    var myMap = mapOf("name" to "Dean", "age" to "30", "email" to "dean@nowhere.net")
 
     myMap.forEach { key, value ->
         println("The key is $key and the value is $value")
+    }
+    /*
+    prints
+        The key is name and the value is Dean
+        The key is age and the value is 30
+        The key is email and the value is dean@nowhere.net
+     */
+}
+
+fun mutableMapExample() {
+    var mutableMap = mutableMapOf("name" to "Dean", "age" to "26", "email" to "dean@nowhere.net")
+    mutableMap.put("gender", "male")
+    mutableMap.put("age", "33")
+
+    mutableMap.forEach { key, value ->
+        println("The $key of the map is $value.")
     }
 }
 
