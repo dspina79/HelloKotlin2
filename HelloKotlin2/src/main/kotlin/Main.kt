@@ -60,6 +60,14 @@ fun mutableMapExample() {
     mutableMap.forEach { key, value ->
         println("The $key of the map is $value.")
     }
+    /*
+    prints
+        The name of the map is Dean.
+        The age of the map is 33.
+        The email of the map is dean@nowhere.net.
+        The gender of the map is male.
+
+     */
 }
 
 fun arrayExample() {
