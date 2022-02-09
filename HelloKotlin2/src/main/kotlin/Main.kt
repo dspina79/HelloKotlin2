@@ -40,6 +40,11 @@ fun main(args: Array<String>) {
     println(addWithDefaults()) // prints 2
     println(addWithDefaults(y = 4)) // prints 5
     println(addWithDefaults(10, 2)) // prints 12
+
+    var person1 = Person("Jacob", "Thomas")
+    person1.printBasics() // prints
+    person1.emailAddress = "jacob@nowhere.net"
+    person1.printBasics() // prints
 }
 
 fun mapExample() {
