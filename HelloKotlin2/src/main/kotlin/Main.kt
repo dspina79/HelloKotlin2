@@ -34,8 +34,12 @@ fun main(args: Array<String>) {
     println(multiply(5,6))
 
     //arrayExample()
-    mapExample()
-    mutableMapExample()
+    //mapExample()
+    //mutableMapExample()
+
+    println(addWithDefaults()) // prints 2
+    println(addWithDefaults(y = 4)) // prints 5
+    println(addWithDefaults(10, 2)) // prints 12
 }
 
 fun mapExample() {
@@ -68,6 +72,16 @@ fun mutableMapExample() {
         The gender of the map is male.
 
      */
+}
+
+fun addWithDefaults(x:Int = 1, y:Int = 1):Int {
+    return x + y
+}
+
+fun iterateItems(items:List<String>) {
+    items.forEachIndexed { index, s ->
+        println("The item at position $index is $s")
+    }
 }
 
 fun arrayExample() {
