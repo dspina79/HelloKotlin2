@@ -3,6 +3,17 @@ class Person(_firstName:String, _lastName:String) {
     var lastName:String
     var emailAddress:String
 
+    var position:String? = null
+        set(value) {
+            field = value
+            println("The new position is $value")
+        }
+
+    // secondary constructor
+    constructor(): this("", "") {
+
+    }
+
     init {
         firstName = _firstName
         lastName = _lastName

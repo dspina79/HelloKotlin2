@@ -4,6 +4,16 @@ var name: String? = "Unknown" // string is nullable
 val pi: Double = 3.14159
 
 fun main(args: Array<String>) {
+
+    var person1 = Person("Jacob", "Thomas")
+    person1.printBasics() // prints Jacob Thomas (email: )
+
+    person1.emailAddress = "jacob@nowhere.net"
+    person1.printBasics() // prints Jacob Thomas (email: jacob@nowhere.net)
+    person1.position = "Manager";
+}
+
+fun basics() {
     println("Hello, Kotlin")
 
     println(pi) // prints 3.14159
@@ -41,10 +51,6 @@ fun main(args: Array<String>) {
     println(addWithDefaults(y = 4)) // prints 5
     println(addWithDefaults(10, 2)) // prints 12
 
-    var person1 = Person("Jacob", "Thomas")
-    person1.printBasics() // prints
-    person1.emailAddress = "jacob@nowhere.net"
-    person1.printBasics() // prints
 }
 
 fun mapExample() {
