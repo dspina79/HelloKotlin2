@@ -8,6 +8,10 @@ class Person(_firstName:String, _lastName:String) {
             field = value
             println("The new position is $value")
         }
+        get() {
+            println("Returning $field")
+            return field
+        }
 
     // secondary constructor
     constructor(): this("", "") {
