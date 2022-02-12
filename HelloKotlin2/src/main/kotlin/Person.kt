@@ -1,4 +1,4 @@
-class Person(_firstName:String, _lastName:String) {
+class Person(_firstName:String, _lastName:String): Speakable {
     var firstName:String
     var lastName:String
     var emailAddress:String
@@ -16,6 +16,10 @@ class Person(_firstName:String, _lastName:String) {
     // secondary constructor
     constructor(): this("", "") {
 
+    }
+
+    override fun speak(): String {
+        return "Hello, I am $firstName"
     }
 
     init {

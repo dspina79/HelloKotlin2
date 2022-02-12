@@ -11,6 +11,7 @@ fun main(args: Array<String>) {
     person1.emailAddress = "jacob@nowhere.net"
     person1.printBasics() // prints Jacob Thomas (email: jacob@nowhere.net)
     person1.position = "Manager";
+    println(person1.speak())
 
     // static method
     println(Mather.add(5, 4)) // prints 11
