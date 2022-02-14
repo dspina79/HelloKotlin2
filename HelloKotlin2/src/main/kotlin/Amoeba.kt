@@ -22,4 +22,13 @@ fun main() {
     var a3 = a2.reproduce()
     a3.live()
     a3.eat();
+
+    /* prints
+        John is living
+        John consumes...
+        Child of John is living
+        Child of John consumes...
+        Child of Child of John is living
+        Child of Child of John consumes...
+     */
 }
