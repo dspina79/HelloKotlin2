@@ -16,6 +16,20 @@ class AdvancedMather {
             return x * x
         }
 
+        fun bruteIsPrime(x:Int):Boolean {
+            var isPrime = x % 2 != 0 && x > 2
+            if (isPrime) {
+                var starter:Int = 3
+                while (starter < x) {
+                    if (x % starter == 0) {
+                        return false
+                    }
+                    starter += 2
+                }
+            }
+            return isPrime
+        }
+
         fun exp(base:Int, power:Int): Int {
             var starter = base
             var p = power
@@ -41,4 +55,13 @@ fun main() {
     println("x is $x")
     println("x squared is $x2")
     println("x to the 5th power is $x5")
+
+
+    var starter = 3
+    while (starter < 100) {
+        if (AdvancedMather.bruteIsPrime(starter)) {
+            println("$starter is prime")
+        }
+        starter += 2
+    }
 }
