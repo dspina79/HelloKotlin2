@@ -7,6 +7,22 @@ class Mather {
         fun multiply(x: Int, y:Int):Int {
             return x * y
         }
+
+        fun compare(x: Int, y:Int): Boolean {
+            return x > y
+        }
+
+        fun difference(x: Int, y: Int): Int {
+            return x - y
+        }
+
+        fun divide(x: Int, y: Int): Double {
+            if (y != 0) {
+                return x.toDouble() / y.toDouble()
+            } else {
+                throw Exception("Cannot divide by zero")
+            }
+        }
     }
 }
 
