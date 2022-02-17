@@ -80,4 +80,14 @@ fun main() {
         }
         starter += 2
     }
+
+    // test and receive an exception on divide
+    try {
+        val dresult1 = Mather.divide(68, 14)
+        println(dresult1)
+        val dresult2 = Mather.divide(68, 0)
+        println(dresult2)
+    } catch (ex: Exception) {
+        println("An error occurred: " + ex.message)
+    }
 }
