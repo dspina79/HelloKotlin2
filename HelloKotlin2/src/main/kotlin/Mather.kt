@@ -32,6 +32,10 @@ class AdvancedMather {
             return x * x
         }
 
+        fun hypotenuseCalc(a: Double, b: Double): Double {
+            return Math.sqrt((a * a) + (b * b))
+        }
+
         fun bruteIsPrime(x:Int):Boolean {
             var isPrime = x % 2 != 0 && x > 2
             if (isPrime) {
@@ -90,4 +94,9 @@ fun main() {
     } catch (ex: Exception) {
         println("An error occurred: " + ex.message)
     }
+
+    // calculate 3, 4, 5 right triangle
+    val hyp: Double = AdvancedMather.hypotenuseCalc(3.0, 4.0)
+    println("The hypotenuse of a triangle with opposite sides 3 and 4 is $hyp")
+
 }
