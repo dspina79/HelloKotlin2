@@ -36,6 +36,14 @@ class AdvancedMather {
             return Math.sqrt((a * a) + (b * b))
         }
 
+        fun factorial(x: Int): Int {
+            if (x == 1) {
+                return 1
+            }
+
+            return x * factorial(x - 1)
+        }
+
         fun bruteIsPrime(x:Int):Boolean {
             var isPrime = x % 2 != 0 && x > 2
             if (isPrime) {
@@ -98,5 +106,6 @@ fun main() {
     // calculate 3, 4, 5 right triangle
     val hyp: Double = AdvancedMather.hypotenuseCalc(3.0, 4.0)
     println("The hypotenuse of a triangle with opposite sides 3 and 4 is $hyp")
-
+    val fact5 = AdvancedMather.factorial(5)
+    println("The factorial of 5 is $fact5")
 }
